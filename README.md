@@ -1,24 +1,20 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This is my first Ruby on Rails application, that I'm building by following an Udemy course 
 
-Things you may want to cover:
+### Features
 
-* Ruby version
+- But basically, this is a markdown excercise.
+- I like it so far
 
-* System dependencies
+### Code example
 
-* Configuration
+```ruby
+def fake_method
+	puts "this is a fake method"
+end
+```
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```javascript
+alert('still fake')
+```
