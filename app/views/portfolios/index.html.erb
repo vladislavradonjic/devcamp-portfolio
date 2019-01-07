@@ -1,8 +1,11 @@
 <h1>Portfolio Items</h1>
 
+<%= link_to "Create New Item", new_portfolio_ulr %>
+
 <% @portfolio_items.each do |pi| %>
 	<p><%= pi.title %></p>
 	<p><%= pi.subtitle %></p>
 	<p><%= pi.body %></p>
 	<%= image_tag pi.thumb_image if !pi.thumb_image.nil? %>
+	<%= link_to "Edit", edit_portfolio_path(pi.id) %>
 <% end %>
