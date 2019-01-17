@@ -1,6 +1,6 @@
 <h1>Portfolio Items</h1>
 
-<%= link_to "Create New Item", new_portfolio_ulr %>
+<%= link_to "Create New Item", new_portfolio_url %>
 
 <% @portfolio_items.each do |pi| %>
 	<p><%= link_to pi.title, portfolio_show_path(pi) %></p>
@@ -8,5 +8,5 @@
 	<p><%= pi.body %></p>
 	<%= image_tag pi.thumb_image if !pi.thumb_image.nil? %>
 	<%= link_to "Edit", edit_portfolio_path(pi) %>
-	<%= link_to "Delete Portfolio Item", portfolio_path(portfolio_item), method: :delete, data: {confirm: 'Are you sure?'} %>
+	<%= link_to "Delete Portfolio Item", portfolio_path(pi), method: :delete, data: {confirm: 'Are you sure?'} %>
 <% end %>
