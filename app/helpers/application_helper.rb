@@ -16,4 +16,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    VladislavRadonjicViewTool::Renderer.copyright 'Vladislav Radonjic', 'All rights reserved'
+  end
+
 end
