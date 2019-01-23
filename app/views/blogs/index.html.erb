@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
+      <th>Blog Title</th>
       <th>Date</th>
       <th>Body</th>
       <th colspan="4"></th>
@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-    <% render partial: 'blog', collection: @blogs %>
+    <%= render @blogs %>
   </tbody>
 </table>
 
